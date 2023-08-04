@@ -164,9 +164,73 @@
         <br>
     </div>
 </section>
-<section class="semilleros" id="semilleros">
+<!-- CONTENIDO PARA SEMILLEROS -->
+<section class="cont-semilleros" id="semilleros">
+    <div class="title-semilleros">
+        <h1>El grupo de investigación MUSSA CAFEC actualmente cuenta con cuatro (4) semilleros de investigación:</h1>
+    </div>
+    <div class="cont_semillero">
+        <div class="semillero">
+            <img src="./img/ambiental1.png" alt="">
+            <h1>BIOTA</h1>
+            <p>Semillero de la red ambiental</p>
+        </div>
 
+        <div class="semillero">
+            <img src="./img/construccion.jpg" alt="">
+            <h1>INDESCO</h1>
+            <p>Semillero red de construcción</p>
+        </div>
+
+        <div class="semillero">
+            <img src="./img/construccion.jpg" alt="">
+            <h1>LA AURORA</h1>
+            <pre>Semillero red de cultura, artes escénicas, 
+gastronomía, agroindustria</pre>
+        </div>
+
+        <div class="semillero">
+            <img src="./img/construccion.jpg" alt="">
+            <h1>SHIKTA SHAWA</h1>
+            <pre>Semillero red gestión administrativa
+y financiera, informática, diseño y 
+desarrollo de software.</pre>
+        </div>
+    </div>    
 </section>
+<!-- CONTENIDO PARA EL CRONOGRAMA DE ACTIVIDADES -->
 <section class="cronograma" id="cronograma">
-    
+    <div class="title_cronograma">
+        <h1>Cronograma del evento:</h1>
+    </div>
+    <div class="cont_text">
+        <div class="text_cronograma">
+            <h1>Martes 17 de octubre de 2023. Dia(1)</h1>
+            <ul>
+                <li><img class="icon_cronograma" src="./img/flecha-correcta.png" alt=""> Presentación de ponencias y poster</li>
+                <li><img class="icon_cronograma" src="./img/flecha-correcta.png" alt="">Presentación feria empresarial</li>
+                <li><img class="icon_cronograma" src="./img/flecha-correcta.png" alt="">Capacitaciones LEGO Education</li>
+                <li><img class="icon_cronograma" src="./img/flecha-correcta.png" alt="">Estas actividades todas iniciaran en el auditorio con una ceremonia de apertura y 
+                    posterior a ello iniciaran actividades de forma paralela.</li>
+            </ul>
+        </div>
+        <div class="img_cronograma1">
+            <img src="./img/eventoDia1.jpeg" alt="">
+        </div>
+    </div>
+</section>
+<section class="cronograma">
+    <div class="cont_text">
+        <div class="text_cronograma ">
+            <h1>Miercoles 18 de octubre de 2023. Dia(2)</h1>
+            <ul>
+                <li><img class="icon_cronograma" src="./img/flecha-correcta.png" alt=""> Presentación de ponencias y poster</li>
+                <li><img class="icon_cronograma" src="./img/flecha-correcta.png" alt=""> Presentación feria empresarial</li>
+                <li><img class="icon_cronograma" src="./img/flecha-correcta.png" alt=""> Torneo de robótica</li>
+            </ul>
+        </div>
+        <div class="img_cronograma1">
+            <img src="./img/eventoDia1.jpeg" alt="">
+        </div>
+    </div>
 </section>
