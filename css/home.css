@@ -1,0 +1,45 @@
+@import "./config.css";
+
+.content {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius:1rem;
+    backdrop-filter: blur(2px);
+    overflow: hidden;
+    z-index: -1000;
+}
+
+.flotantes {
+    position: absolute;
+    z-index: -2000;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.flotantes span {
+    position: absolute;
+    right: 3%;
+    top: 1%;
+}
+
+.flotantes span img {
+    width: 100px;
+    animation: glowing_401 4s linear infinite;
+}
+
+@keyframes glowing_401 {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.left img {
+    width: 600px;
+    aspect-ratio: 1/1;
+}

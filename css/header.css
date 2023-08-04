@@ -21,9 +21,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    box-shadow: 0 16px 8px -9px rgba(191, 191, 191);
+    border: 2px solid black;
+    border-radius: 0 0 1rem 1rem;
     padding:10px 30px;
+    margin-bottom: 30px;
 }
 .logos {
     display: flex;
@@ -72,12 +73,14 @@ nav ul li a {
 }
 /* Contenido de la vista inicio */
 .content {
-    width: 97%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    background-color: rgb(211, 211, 211);
-    border-radius: 10px;
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius:1rem;
+    backdrop-filter: blur(2px);
+    overflow: hidden;
+    z-index: -1000;
 }
 /* Estilos para el enlace del botón del dropdown */
 #dropdown-trigger {

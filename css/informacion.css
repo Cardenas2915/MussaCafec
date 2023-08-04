@@ -24,9 +24,14 @@ main h1{
 }
 .contenido{
     display: flex;
-    margin:0 auto ;
-    height: 100%;
-    width:90% ;
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius:1rem;
+    backdrop-filter: blur(2px);
+    overflow: hidden;
+    z-index: -1000;
 
 }
 /* Contenido de la izquierda */

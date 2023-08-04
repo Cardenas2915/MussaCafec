@@ -13,10 +13,7 @@
     </div>
     <div class="mision">
         <div><h1 class="titulo">MISION</h1></div>
-        <div><p class="text">Somos un equipo de trabajo conformado por Aprendices e Instructores del Centro 
-    Agroindustrial y Fortalecimiento Empresarial del SENA Regional Casanare, comprometidos en el 
-    desarrollo y el fortalecimiento de las competencias investigativas de los diferentes programas 
-    tecnológicos. Con las actividades de Investigación, Desarrollo Tecnológico e Innovación, se pretende 
+        <div><p class="text">Con las actividades de Investigación, Desarrollo Tecnológico e Innovación, se pretende 
     aumentar la calidad de la formación profesional y aportar en la resolución de problemas y/o 
     necesidades del sector productivo de la región y el país que contribuyen al aumento de la 
     competitividad.</p></div>

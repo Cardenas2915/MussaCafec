@@ -24,6 +24,8 @@ if(is_file('./views/contenido/'.$_GET['vista'].'.php') &&  $_GET['vista'] != 'ho
     }
 }
 
+
 require_once 'views/layaout/footer.php';
 ?>
+
 
