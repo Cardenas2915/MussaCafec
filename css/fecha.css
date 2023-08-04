@@ -1,0 +1,67 @@
+@import "./config.css";
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{
+    background:var(--colorwhite);
+    padding:10px 30px;
+    border-radius: 10px;
+}
+.titulo h1{
+    font-family:"WorkSans-ExtraBold";
+    font-size: 4rem;
+    color: var(--azulSena);
+}
+.content{
+    display: flex;
+    margin:280px 70px 70px 70px;
+}
+.text-fecha{
+    padding: 20px 30px;
+    background:var(--colorAlerta);
+    font-family:"WorkSans-Italic";
+    font-size: 1.5rem;
+    margin: 50px;
+    border-radius: 10px;
+}
+.text-fecha span{
+    color: #ffc200;
+    font-family:"WorkSans-Medium";
+}
+.icon{
+    width: 45px;
+    margin-right: 5px;
+}
+
+.dia-especifico{
+    background: var(--azulSena);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.day{
+    display: flex;
+    align-items: center;
+}
+.day h1{
+    font-family:"WorkSans-Medium";
+    color: var(--azulSena);
+    font-size: 1.3rem;
+    color: var(--colorwhite);
+}
+.listas{
+    margin-top: 10px;
+}
+.listas li{
+    color: var(--colorwhite);
+    font-family:"WorkSans-Italic";
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.banner img{
+    width: 900px;
+    margin-top: 20px;
+}

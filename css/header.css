@@ -1,0 +1,145 @@
+@import "./config.css";
+/* BARRA DE NAVEGACION Y SUS DEPENDENCIAS
+
+/* Ajustes visuales opcionales
+
+/* .header:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-position: center;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(../img/50.png);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+} */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 16px 8px -9px rgba(191, 191, 191);
+    padding:10px 30px;
+}
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logos img {
+    width: 80px;
+}
+.logos .separa-logos{
+    width: 4px;
+    height: 85px;
+    background-color: gray;
+    border-radius: 5px;
+}
+.logos a {
+    font-family: "WorkSans-ExtraBold";
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--verdeSena);
+}
+nav ul {
+    display: flex;
+    gap: 5px;
+}
+nav ul li {
+    list-style: none;
+    cursor: pointer;
+}
+nav ul li:hover, nav ul li:hover a{
+    background: var(--verdeSena);
+    border-radius: 10px;
+    color: #ffffff;
+    transition: background-color .3s;
+}
+nav ul li a {
+    padding: 10px 30px;
+    text-decoration: none;
+    font-family: "WorkSans-Medium";
+    font-size: 1.2rem;
+    display: block;
+    color: black;
+}
+.user-icon {
+    height: 50px;
+}
+/* Contenido de la vista inicio */
+.content {
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background-color: rgb(211, 211, 211);
+    border-radius: 10px;
+}
+/* Estilos para el enlace del botón del dropdown */
+#dropdown-trigger {
+    cursor: pointer;
+}
+#dropdown{
+    position: relative;
+}
+/* Estilos para el contenido del dropdown */
+#dropdown-content {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: -6%;
+    list-style: none;
+    background-color:var(--verdeSena);
+    padding: 0px 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Mostrar el contenido del dropdown cuando se haga clic en el enlace */
+#dropdown-trigger:focus + #dropdown-content {
+    display: block;
+}
+
+/* Estilos para las opciones del dropdown */
+#dropdown-content li {
+    margin: 5px 0;
+}
+
+/* Estilos para los enlaces del dropdown */
+#dropdown-content li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Estilos para los enlaces del dropdown cuando se les pasa el mouse */
+#dropdown-content li a:hover {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    color: black;
+}
+#icon-dropdown{
+    width: 15px;
+    height: 15px;
+    transition: all .4s;
+}
+
+.title-dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.active-dropdown{
+    rotate: 180deg;
+    filter: invert(100);
+}
+#dropdown-trigger:hover #icon-dropdown{
+    filter: invert(100%);
+}
+
+
+
+

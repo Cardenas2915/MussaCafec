@@ -1,0 +1,29 @@
+@import "./config.css";
+main{
+    border: 1px solid black;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: gray;
+}
+.cont1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin: 50px;
+    background: #fff;
+    border-radius: 10px;
+}
+.titulo{
+    color:var(--azulSena);
+    font-family: "WorkSans-ExtraBold";
+}
+.text{
+    font-family:"WorkSans-Medium";
+    font-size: 1.2rem;
+    align-items: center;
+}

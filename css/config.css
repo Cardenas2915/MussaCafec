@@ -1,0 +1,31 @@
+@font-face {
+    font-family:"WorkSans-ExtraBold";
+    src: url(../font/WorkSans-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family:"WorkSans-Italic";
+    src: url(../font/WorkSans-Italic.ttf);
+}
+
+@font-face {
+    font-family:"WorkSans-Medium";
+    src: url(../font/WorkSans-Medium.ttf);
+}
+
+:root{
+    --verdeSena:#39A900;
+    --azulSena:#00324D;
+    --colorwhite:rgb(255, 255, 255);
+    --fondopanel:#F5F5F5;
+    --colorAlerta:#01A6BD;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
