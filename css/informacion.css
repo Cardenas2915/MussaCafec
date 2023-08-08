@@ -1,4 +1,7 @@
 @import "./config.css";
+*{
+    scroll-behavior: smooth;
+}
 main{
     display: flex;
     justify-content: center;
@@ -25,14 +28,8 @@ main h1{
 .contenido{
     display: flex;
     position: relative;
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
-    border: 2px solid black;
-    border-radius:1rem;
-    backdrop-filter: blur(2px);
-    overflow: hidden;
-    z-index: -1000;
-
 }
 /* Contenido de la izquierda */
 .contenido-izquierda{
@@ -55,19 +52,20 @@ main h1{
     color: var(--azulSena);
     margin-bottom: 10px;
 }
-.atajos-rapidos li{
+.link-atajos_rapidos li{
     padding:10px 0;
     list-style:none ;
 }
-.atajos-rapidos li a{
+.link-atajos_rapidos li a{
     font-family:"WorkSans-Italic";
     font-size: 1.2rem;
     text-decoration: none;
     transition: all .3s;
     display: flex;
     align-content: center;
+    cursor: pointer;
 }
-.atajos-rapidos li a:hover{
+.link-atajos_rapidos li a:hover{
     color: var(--azulSena);
     transform: scale(1.1);
 }
@@ -103,8 +101,6 @@ main h1{
     margin:0 30px 0 30px;
     padding: 20px;
     border-radius: 10px;
-    cursor: pointer;
-    transition: all .7s ease-in-out;
 }
 .title-componentes{
     margin: 10px 0 30px 30px;
@@ -322,5 +318,62 @@ main h1{
 .text_cronograma ul li:last-of-type{
     max-width: 80%;
 }
-
-
+/* BOTON SPAN DE REGISTRO */
+.span-registro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.span-registro h1{
+    font-family:"WorkSans-Medium";
+    color: var(--azulSena);
+    margin-bottom: 10px;
+}
+.link_span-registro{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 25px;
+    border-radius: 5px;
+    width: 70%;
+    background: var(--azulSena);
+    transition: .2s ease-in-out all;
+    text-decoration: none;
+    position: relative;
+}
+.link_span-registro p{
+    font-family:"WorkSans-Italic";
+    font-size: 1.1rem;
+    color: var(--colorwhite);
+    transition: .5s ease-in-out all;
+    position: absolute;
+    left: 25%;
+}
+/*apartado de animar el bottom*/
+.icon_span-registro{
+    width: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    left: -20px;
+    transition: .5s ease-in-out all;
+    opacity: 0;
+}
+.icon_span-registro img{
+    width: 20px;
+    filter: invert(100);
+}
+.link_span-registro:hover{
+    background:var(--verdeSena);
+}
+.link_span-registro:hover .icon_span-registro{
+    left: 87%;
+    opacity: 1;
+}
+.link_span-registro:hover p{
+    left: 10px;
+}

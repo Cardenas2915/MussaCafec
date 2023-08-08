@@ -1,31 +1,100 @@
 @import "./config.css";
+/*BANNER*/
 main{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
 }
-
-.cont1{
+.icon{
+    width: 30px;
+    margin-right: 5px;
+}
+/*ESTILOS DE LA CARD DE RECORDANDO LA FECHA*/
+.title-fecha{
+    padding: 15px;
+    border-radius: 5px;
+    background: rgba(248, 52, 52, 0.726);
+}
+.icon-title{
+    display: flex;
+    align-items: center;
+}
+.title-fecha h1{
+    font-size: 1.2rem;
+    font-family:"WorkSans-Medium";
+}
+.title-fecha p{
+    margin-top: 10px;
+    font-family:"WorkSans-Italic";
+    font-size: 1rem;
+}.title-fecha span{
+    color: rgb(255, 255, 255);
+    font-family:"WorkSans-Medium";
+    font-size: 1.1rem;
+}
+/*CONTENIDO GENERAL*/
+.contenido{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background: #fff;
-    border-radius: 10px;
-    gap: .5rem;
-    align-items: center;
-    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    gap: 50px;
 }
-.cont1 .vision, .cont1 .mision{
-    width: 20rem;
-    border-radius: 1rem;
-    padding: 1rem;
-    background-color: #fcfcfcb0;
-    box-shadow: 0.3em 0.3em 0.7em #00000015;
+/* IZQUIERDA */
+.contenido-izquierda{
+    width: 90%;
+    padding-top: 20px;
 }
-.titulo{
-    color:var(--azulSena);
-    font-family: "WorkSans-ExtraBold";
-}
-.text{
+.texto_izquierda h1{
     font-family:"WorkSans-Medium";
-    font-size: 1.2rem;
+    color: var(--azulSena);
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+}
+.texto_izquierda p{
+    font-family:"WorkSans-Italic";
+    font-size: 1.1rem;
+}
+/* MISION Y VISION */
+.vision, .mision{
+    padding: 25px;
+    border-bottom: 1px solid rgba(161, 160, 160, 0.699);
+}
+.vision h1, .mision h1{
+    margin-bottom: 5px;
+    font-family:"WorkSans-ExtraBold";
+    font-size: 1.6rem;
+    color: var(--azulSena);
+}
+.vision p, .mision p{
+    font-family:"WorkSans-Italic";
+    font-size: 1.1rem;
+}
+/* OBJETIVOS */
+.objetivos , .obj-especificos{
+    padding: 25px;
+    border-bottom: 1px solid rgba(161, 160, 160, 0.699);
+}
+.objetivos h1 , .obj-especificos h1{
+    margin-bottom: 5px;
+    font-family:"WorkSans-ExtraBold";
+    font-size: 1.5rem;
+    color: var(--azulSena);
+}
+.objetivos p , .obj-especificos p{
+    font-family:"WorkSans-Italic";
+    font-size: 1.1rem;
+}
+.obj-especificos p{
+    padding-bottom: 10px;
+}
+.objetivo{
+    display: flex;
     align-items: center;
+}
+.obj-icon{
+    width: 20px;
+    margin-right: 20px;
 }

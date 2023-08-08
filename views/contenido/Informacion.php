@@ -8,7 +8,7 @@
     <div class="contenido-izquierda">
         <div class="atajos-rapidos">
             <div><h1>Aca vas a encontrar :</h1></div>
-            <div>
+            <div class="link-atajos_rapidos">
                 <li><a href="#componentes"><img class="icon-link" src="./img/link.png" alt="">Componentes del evento</a></li>
                 <li><a href="#semilleros"><img class="icon-link" src="./img/link.png" alt="">Semilleros de investigacion</a></li>
                 <li><a href="#cronograma"><img class="icon-link" src="./img/link.png" alt="">Cronograma de evento</a></li>
@@ -23,6 +23,13 @@
                 2023</span> desde las 6:00 am  para participantes como ponentes, posters, feria empresarial y concursantes
                 al torneo de robótica y se abrirá al cumplido a partir de las 8:00 am. Cronograma que se usará en
                 los mismos <span>horarios para ambos días.</span>  </p>
+        </div>
+        <div class="span-registro">
+        <h1>Deseas participar?</h1>
+            <a class="link_span-registro" href="">
+                <div class="icon_span-registro"><img class="" src="./img/next.png" alt=""></div>
+                <p>Registrate Aqui</p>
+            </a>
         </div>
     </div>
     <!-- CONTENIDO DE LOS COMPONENTES Y PARTE DERECHA DE LA PAGINA -->
@@ -234,3 +241,4 @@ desarrollo de software.</pre>
         </div>
     </div>
 </section>
+

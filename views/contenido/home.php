@@ -1,16 +1,16 @@
 <link rel="stylesheet" href="./css/home.css">
-<div class="flotantes">
-    <span><img src="img\tuerca.avif" alt=""></span>
-    <span class="blob"></span>
-</div>
-<section class="content">
-
-    
-    <div class="left">
-        <img src="img\home-img.svg" alt="">
+<main>
+    <article class="cont-izquierda">
+        <h1>BIENVENIDOS</h1>
+        <p>Sitio oficial del VI Encuentro de semilleros de investigación SENA Regional Casanare.</p>
+    </article>
+    <article class="cont-derecha">
+        <img class="img-home" src="./img/home-img.png" alt="">
+    </article>
+</main>
+<section>
+    <div class="contenido-atajos">
+        <h1>Te puede interesar:</h1>
+        
     </div>
-    <div class="right">
-        Mussa Cafec
-    </div>
-       
 </section>
