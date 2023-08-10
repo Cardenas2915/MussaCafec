@@ -130,5 +130,22 @@ nav ul li a {
 
 
 /*FOOTER*/
-
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #afafaf81;
+    margin-top: 50px;
+}
+footer img{
+    width: 40px;
+}
+footer a{
+    margin-right: 20px;
+}
+.text-footer p{
+    font-family:"WorkSans-Medium";
+    font-size: 1.1rem;
+}
 

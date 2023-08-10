@@ -17,7 +17,7 @@
             </div>
             <ul id="dropdown-content">
                 <li><a href="<?=base_url?>informacion">Informacion</a></li>
-                <li><a href="<?=base_url?>registrarme">Registrarme</a></li>
+                <li><a href="<?=base_url?>registro">Registrarme</a></li>
             </ul>
         </li>
         <li class=""><a href="<?=base_url?>galeria">Galeria</a></li>

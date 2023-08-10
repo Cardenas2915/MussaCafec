@@ -7,8 +7,11 @@
     <!-- CONTENIDO DE LA PARTE IQUIERDA DE LA PAGINA -->
     <div class="contenido-izquierda">
         <article class="texto_izquierda">
-            <h1>¿Quienes somos?</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, et debitis!</p>
+            <h1>MUSSA CAFEC</h1>
+            <p>Nuestro propósito es difundir el VI Encuentro de Semilleros de Investigación SENA Regional Casanare. 
+                Además, busca fomentar la investigación, la innovación y el desarrollo tecnológico entre los estudiantes 
+                e instructores del Sena Regional Casanare, resaltando el trabajo realizado en los semilleros y grupos 
+                de investigación de la región Orinoquia.</p>
         </article>
         <article class="contenido-izquierda">
             <div class="title-fecha">

@@ -2,7 +2,7 @@
 <main>
     <article class="cont-izquierda">
         <h1>BIENVENIDOS</h1>
-        <p>Sitio oficial del VI Encuentro de semilleros de investigación SENA Regional Casanare.</p>
+        <p>"Fomentando la Investigación e Innovación: VI Encuentro de Semilleros de Investigación SENA Regional Casanare".</p>
     </article>
     <article class="cont-derecha">
         <img class="img-home" src="./img/home-img.png" alt="">

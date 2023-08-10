@@ -52,6 +52,9 @@ main{
     background: #c5e5f465;
     display: inline-flex;
     border-radius: 15px;
+    -webkit-box-shadow: 10px 10px 9px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 9px -7px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 9px -7px rgba(0,0,0,0.75);
 }
 .card_title{
     padding: 20px;
