@@ -8,6 +8,7 @@
     background: rgb(0,50,77);
 background: linear-gradient(0deg, rgba(0,50,77,1) 0%, rgba(0,50,77,0.8270716292134832) 100%);
 }
+
 .main h1{
     font-family:"WorkSans-ExtraBold";
     font-size: 2.5rem;
@@ -43,7 +44,7 @@ background: linear-gradient(0deg, rgba(0,50,77,1) 0%, rgba(0,50,77,0.82707162921
     flex-direction: column;
     border: 1px solid rgba(161, 160, 160, 0.699);
     border-radius: 5px;
-    width: 95%;
+    width: 85%;
 }
 .categorias-ponente h1{
     font-family:"WorkSans-Medium";
@@ -52,19 +53,18 @@ background: linear-gradient(0deg, rgba(0,50,77,1) 0%, rgba(0,50,77,0.82707162921
     padding: 20px;
     margin-bottom: 20px;
 }
-.column-form{
+.form-ponente{
     display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-    margin-bottom:2rem;
+    flex-direction: column;
 }
+
 /*Estilos para los input*/
 .coolinput {
     display: flex;
     flex-direction: column;
-    width: fit-content;
-    position: static;
-    width: 500px;
+    width: 90%;
+    padding-bottom: 20px;
+    margin: auto;
 }
 
 .coolinput label.text {
@@ -75,21 +75,83 @@ background: linear-gradient(0deg, rgba(0,50,77,1) 0%, rgba(0,50,77,0.82707162921
     top: 0.5rem;
     margin: 0 0 0 7px;
     padding: 0 3px;
-    background: #fff;
+    border: 2px #39A900 solid;
+    background: #E8F5FB;
     width: fit-content;
     font-family:"WorkSans-Italic";
 }
 
-.coolinput input[type=text].input {
+.coolinput input[type=text].input , .select {
     padding: 11px 10px;
     font-size: 1rem;
     border: 2px #39A900 solid;
     font-family:"WorkSans-Medium";
     border-radius: 5px;
+    background: #c5e5f465;
+}
+.select{
+    outline: none;
 }
 .coolinput input[type=text].input:focus {
     outline: none;
 }
 /*Fin de estilos input*/
 
+/*estilo para el input tipo file*/
+.form-title {
+    font-size: 1.1rem;
+    color: #39A900;
+    font-family:"WorkSans-Medium";
+}
+.drop-container {
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 2.1875rem;
+    border-radius: 10px;
+    border: 2px dashed rgb(171, 202, 255);
+    font-size: 1.1rem;
+    font-family:"WorkSans-Medium";
+    cursor: pointer;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+}
+.drop-container:hover {
+    background: rgba(0, 140, 255, 0.164);
+    border-color: rgba(17, 17, 17, 0.616);
+}
+.drop-title {
+    font-size: 1.1rem;
+    color: black;
+    font-family:"WorkSans-Medium";
+    text-align: center;
+    transition: color .2s ease-in-out;
+}
+#file-input {
+    width: 600px;
+    max-width: 100%;
+    color: #444;
+    padding: 2px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid rgba(8, 8, 8, 0.288);
+}
+#file-input::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #084cdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+
+#file-input::file-selector-button:hover {
+    background: #0d45a5;
+}
 
