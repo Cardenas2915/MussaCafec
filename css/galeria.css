@@ -1,0 +1,37 @@
+@import "config.css";
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    background: rgb(0,50,77);
+    background: linear-gradient(0deg, rgba(0,50,77,1) 0%, rgba(0,50,77,0.8270716292134832) 100%);
+    margin-bottom: 60px;
+}
+
+main h1{
+    font-family:"WorkSans-ExtraBold";
+    font-size: 2.5rem;
+    color: var(--colorwhite);
+    margin-bottom: 20px;
+}
+main p{
+    font-family:"WorkSans-Medium";
+    font-size: 1.3rem;
+    color: var(--colorwhite);
+}
+.galeria {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 120px;
+    grid-column-gap: 20px;
+    grid-row-gap: 2px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+.contenido{
+    background: #39A900;
+}

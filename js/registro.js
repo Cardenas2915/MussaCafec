@@ -114,7 +114,7 @@ participantesInput.addEventListener('input', () => {
         
         const labelNombre = document.createElement('label');
         labelNombre.className = 'text';
-        labelNombre.textContent = `Nombre del participante ${i}:`;
+        labelNombre.textContent = `Nombre_del_participante_${i}`;
         
         const inputNombre = document.createElement('input');
         inputNombre.type = 'text';

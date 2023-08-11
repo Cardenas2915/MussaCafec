@@ -25,7 +25,7 @@
             <form action="./config/registrarPonentes.php" method="POST" class="form">
                     <div class="coolinput">
                         <label for="eje" class="text">Eje tematico:</label>
-                        <input type="text" placeholder="..." name="ejeTematico" class="input" id="eje">
+                        <input type="text" placeholder="..." name="ejetematico" class="input" id="eje" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}">
                     </div>
                     <div class="coolinput">
                         <label for="Institucion" class="text">Institución de participación:</label>
@@ -38,23 +38,23 @@
                     <div class="mostrar-input-externa">
                         <div class="coolinput">
                             <label for="externa" class="text">Define tu Insitucion:</label>
-                            <input type="text" placeholder="Nombre de la institucion..." name="externa" class="input" id="externa">
+                            <input type="text" placeholder="Nombre de la institucion..." name="externa" class="input" id="externa" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}">
                         </div>
                     </div>
                     <div class="mostrar-input-sena">
                         <div class="coolinput">
                             <label for="titulada" class="text">Titulada:</label>
-                            <input type="text" placeholder="Nombre de la titulada.." name="titulada" class="input" id="titulada">
+                            <input type="text" placeholder="Nombre de la titulada.." name="titulada" class="input" id="titulada" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}">
                         </div>
 
                         <div class="coolinput">
                             <label for="ficha" class="text">Ficha:</label>
-                            <input type="text" placeholder="# de ficha..." name="ficha" class="input" id="ficha">
+                            <input type="text" placeholder="# de ficha..." name="ficha" class="input" id="ficha" pattern="[0-9]{4,20}">
                         </div>
                     </div>
                     <div class="coolinput">
                         <label for="Ponentes" class="text">Numero de ponentes:</label>
-                        <select id="Ponentes" class="select" onchange="crearCampos()">
+                        <select id="Ponentes" name="numeroPonentes" class="select" onchange="crearCampos()">
                             <option value="">Seleccione una opcion</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -82,8 +82,8 @@
                             del documento a 20 Mb x documento).</span>
                         <label for="file-input" class="drop-container">
                             <span class="drop-title">Selecciona tus archivos aqui.</span>
-                            <input type="file" accept=".pdf" id="file-input">
-                            <input type="file" accept=".docx" id="file-input">
+                            <input type="file" name="archivo_1" accept=".pdf" id="file-input">
+                            <input type="file" name="archivo_2" accept=".docx" id="file-input">
                         </label>
                     </div>
                     <div class="coolinput">
@@ -111,7 +111,7 @@
                     </div>
                     <div class="coolinput">
                         <label for="participantes" class="text">Participantes:</label>
-                        <input type="text" min="1" max="6" placeholder="Ingrese el número de participantes (máximo 6)" class="input" id="participantes">
+                        <input type="text" name="Nparticipantes" min="1" max="6" placeholder="Ingrese el número de participantes (máximo 6)" class="input" id="participantes">
                     </div>
                     <div id="contenedorParticipantes"></div>
                     <div class="coolinput">
@@ -123,7 +123,7 @@
                             documento 20Mb)</span>
                         <label for="file-input" class="drop-container">
                             <span class="drop-title">Selecciona tus archivos aqui.</span>
-                            <input type="file" accept=".pdf" id="file-input">
+                            <input type="file" accept=".pdf" id="file-input" name="archivo">
                         </label>
                     </div>
                     <div class="coolinput">

@@ -1,11 +1,15 @@
 <?php 
 
-class Database{
-    public static function connect(){
-        $db = new mysqli('localhost','root','','mussacafec');
-        $db->query("SET NAMES 'utf8'");
-        return $db;
-    }
-}
+$servidor= 'localhost';
+$usuario = 'root';
+$pass = "";
+$nameDB = 'mussacafec';
+
+$db = mysqli_connect($servidor,$usuario,$pass,$nameDB);
+
+if(!isset($_SESSION)){
+    session_start();
+} 
+
 
 ?>

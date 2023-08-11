@@ -135,11 +135,11 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background: #afafaf81;
+    background: #EFEFF0;
     margin-top: 50px;
 }
 footer img{
-    width: 40px;
+    width: 30px;
 }
 footer a{
     margin-right: 20px;
@@ -147,5 +147,15 @@ footer a{
 .text-footer p{
     font-family:"WorkSans-Medium";
     font-size: 1.1rem;
+}
+.iconos-footer{
+    display: flex;
+    flex-direction: column;
+}
+.icon-text_footer a , .text-footer{
+    font-family: "WorkSans-Medium";
+    color: #5C5D5F;
+    text-align: center;
+    text-decoration: none;
 }
 
