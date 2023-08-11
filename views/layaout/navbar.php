@@ -16,16 +16,16 @@
                 </a>
             </div>
             <ul id="dropdown-content">
-                <li><a href="<?=base_url?>informacion">Informacion</a></li>
-                <li><a href="<?=base_url?>registro">Registrarme</a></li>
+                <li><a href="index.php?vista=informacion">Informacion</a></li>
+                <li><a href="index.php?vista=registro">Registrarme</a></li>
             </ul>
         </li>
-        <li class=""><a href="<?=base_url?>galeria">Galeria</a></li>
-        <li><a href="<?=base_url?>nosotros">Nosotros</a></li>
+        <li class=""><a href="index.php?vista=galeria">Galeria</a></li>
+        <li><a href="index.php?vista=nosotros">Nosotros</a></li>
         </ul>
     </nav>
     <div class="box-perfil">
-        <a href="<?=base_url?>"><img class="user-icon" src="img/usuario.svg" alt=""></a>
+        <a href="index.php?vista="><img class="user-icon" src="img/usuario.svg" alt=""></a>
     </div>
 </header>
 <script src="./js/navbar.js"></script>

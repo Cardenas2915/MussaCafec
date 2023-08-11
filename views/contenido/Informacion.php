@@ -26,7 +26,7 @@
         </div>
         <div class="span-registro">
         <h1>Deseas participar?</h1>
-            <a class="link_span-registro" href="">
+            <a class="link_span-registro" href="index.php?vista=registro">
                 <div class="icon_span-registro"><img class="" src="./img/next.png" alt=""></div>
                 <p>Registrate Aqui</p>
             </a>

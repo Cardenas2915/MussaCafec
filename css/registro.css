@@ -38,7 +38,10 @@ background: linear-gradient(0deg, rgba(0,50,77,1) 0%, rgba(0,50,77,0.82707162921
     color: white;
 }
 /*Estilos para el formulario*/
-.categorias-ponente{
+.categorias{
+    margin:4rem 0;
+}
+.categorias_div{
     display: flex;
     margin: auto;
     flex-direction: column;
@@ -46,20 +49,66 @@ background: linear-gradient(0deg, rgba(0,50,77,1) 0%, rgba(0,50,77,0.82707162921
     border-radius: 5px;
     width: 85%;
 }
-.categorias-ponente h1{
-    font-family:"WorkSans-Medium";
-    font-size: 1.3rem;
+.title-categorias{
+    display: flex;
+    justify-content: space-between;
     background: #c5e5f465;
     padding: 20px;
     margin-bottom: 20px;
 }
-.form-ponente{
+.title-categorias h1{
+    font-family:"WorkSans-Medium";
+    font-size: 1.3rem;
+
+}
+.descargar-formato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.descargar-formato p{
+    font-family:"WorkSans-Italic";
+    margin-right: 15px;
+}
+.descargar-formato button{
+    padding: 10px 30px;
+    background: #39A900;
+    border: none;
+    border-radius: 5px;
+    font-family:"WorkSans-Medium";
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: .4s ease-in-out all;
+}
+.icon-descarga{
+    width: 20px;
+    filter: invert(100%);
+}
+.descargar-formato button:hover{
+    transform: scale(1.1);
+}
+.form{
     display: flex;
     flex-direction: column;
 }
+.button-registro{
+    padding: 10px 0;
+    background:var(--azulSena);
+    border: none;
+    border-radius: 5px;
+    font-family:"WorkSans-Medium";
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.button-registro:hover{
+    background: #39a900;
+}
 
 /*Estilos para los input*/
-.coolinput {
+.coolinput{
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -81,18 +130,18 @@ background: linear-gradient(0deg, rgba(0,50,77,1) 0%, rgba(0,50,77,0.82707162921
     font-family:"WorkSans-Italic";
 }
 
-.coolinput input[type=text].input , .select {
+.coolinput input[type=text].input ,.coolinput input[type=email].input, .select {
     padding: 11px 10px;
     font-size: 1rem;
     border: 2px #39A900 solid;
     font-family:"WorkSans-Medium";
     border-radius: 5px;
-    background: #c5e5f465;
+    background: #F3F4F4;
 }
 .select{
     outline: none;
 }
-.coolinput input[type=text].input:focus {
+.coolinput input[type=text].input:focus, .coolinput input[type=email].input:focus{
     outline: none;
 }
 /*Fin de estilos input*/
@@ -121,7 +170,7 @@ background: linear-gradient(0deg, rgba(0,50,77,1) 0%, rgba(0,50,77,0.82707162921
     transition: background .2s ease-in-out, border .2s ease-in-out;
 }
 .drop-container:hover {
-    background: rgba(0, 140, 255, 0.164);
+    background: #E8F5FB;
     border-color: rgba(17, 17, 17, 0.616);
 }
 .drop-title {
@@ -143,7 +192,7 @@ background: linear-gradient(0deg, rgba(0,50,77,1) 0%, rgba(0,50,77,0.82707162921
 #file-input::file-selector-button {
     margin-right: 20px;
     border: none;
-    background: #084cdf;
+    background: rgb(61,186,196);
     padding: 10px 20px;
     border-radius: 10px;
     color: #fff;
@@ -152,6 +201,16 @@ background: linear-gradient(0deg, rgba(0,50,77,1) 0%, rgba(0,50,77,0.82707162921
 }
 
 #file-input::file-selector-button:hover {
-    background: #0d45a5;
+    background: #39A900;
 }
-
+/*fin de estilo para el input tipo file*/
+/*Inicio de estilo para el apartado de ponentes*/
+.div-ponente{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-ponente{
+    width:90%;
+    margin: 7px;
+}

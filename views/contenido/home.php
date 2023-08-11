@@ -23,7 +23,7 @@
                 <p>Visita nuestra seccion de momentos en <br> cada uno de nuestros eventos.</p>
             </div>
             <div class="link-card">
-                <button><span>Visitar</span></button>
+                <a href="index.php?vista=galeria"><span>Visitar</span></a>
             </div>
             
             
@@ -41,7 +41,7 @@
             </p>
             </div>
             <div class="link-card">
-                <button><span>Ver mas</span></button>
+            <a href="index.php?vista=informacion"><span>Ver mas</span></a>
             </div>
             
             
@@ -59,7 +59,7 @@
             </p>
             </div>
             <div class="link-card">
-                <button><span>Ingresar</span></button>
+            <a href="index.php?vista=registro"><span>Ingresar</span></a>
             </div>
             
             

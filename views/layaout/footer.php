@@ -1,7 +1,7 @@
 <!-- FOOTER -->
 <footer>
     <div class="text-footer">
-        <p>Mussa Cafec - SENA &copy; <?= date('Y') ?></p>
+        <p>Mussa Cafec - www.sena.edu.co &copy; <?= date('Y') ?></p>
     </div>
     <div class="iconos-footer">
         <a href="https://www.facebook.com/SENACasanare"><img src="./img/facebook.png" alt=""></a>
