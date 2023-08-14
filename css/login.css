@@ -1,0 +1,100 @@
+main{
+    background: rgb(57,169,0);
+    background: linear-gradient(0deg, rgba(57,169,0,0.7456109550561798) 0%, rgba(57,169,0,0.1978581460674157) 100%);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 73vh;
+}
+.form {
+    background-color: #fff;
+    display: block;
+    padding: 1rem;
+    max-width: 450px;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.input-container label{
+    font-family:"WorkSans-Medium";
+    font-size: 1.1rem;
+}
+.input-container input, .form button {
+    outline: none;
+    border: 1px solid #e5e7eb;
+    margin: 8px 0;
+}
+.input-container input {
+    background: #F3F4F4;
+    font-family:"WorkSans-Italic";
+    padding: 0.8rem;
+    padding-right: 3rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    width: 350px;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.submit {
+    display: block;
+    padding: 10px;
+    font-family:"WorkSans-Medium";
+    background-color: var(--verdeSena);
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.submit:hover {
+    background-color: #297c00;
+}
+.title {
+    font-family:"WorkSans-ExtraBold";
+    font-size: 28px;
+    color:var(--verdeSena);
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    margin: 10px 0 25px 0px;
+}
+
+.title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    left: 0px;
+    background-color:var(--verdeSena);
+}
+.title::before {
+    width: 22px;
+    height: 22px;
+    background-color:var(--verdeSena);
+}
+.title::after {
+    width: 22px;
+    height: 22px;
+    animation: pulse 1s linear infinite;
+}
+@keyframes pulse {
+    from {
+    transform: scale(0.9);
+    opacity: 1;
+    }
+    to {
+    transform: scale(1.8);
+    opacity: 0;
+    }
+}

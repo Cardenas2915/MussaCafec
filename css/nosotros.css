@@ -6,6 +6,9 @@ main{
     align-items: center;
     margin-bottom: 70px;
 }
+main img{
+    width: 60%;
+}
 .icon{
     width: 30px;
     margin-right: 5px;
@@ -28,7 +31,9 @@ main{
     margin-top: 10px;
     font-family:"WorkSans-Italic";
     font-size: 1rem;
-}.title-fecha span{
+    text-align: justify;
+}
+.title-fecha span{
     color: rgb(255, 255, 255);
     font-family:"WorkSans-Medium";
     font-size: 1.1rem;
@@ -56,6 +61,7 @@ main{
 .texto_izquierda p{
     font-family:"WorkSans-Italic";
     font-size: 1.1rem;
+    text-align: justify;
 }
 /* MISION Y VISION */
 .vision, .mision{
@@ -71,6 +77,7 @@ main{
 .vision p, .mision p{
     font-family:"WorkSans-Italic";
     font-size: 1.1rem;
+    text-align: justify;
 }
 /* OBJETIVOS */
 .objetivos , .obj-especificos{
@@ -86,6 +93,7 @@ main{
 .objetivos p , .obj-especificos p{
     font-family:"WorkSans-Italic";
     font-size: 1.1rem;
+    text-align: justify;
 }
 .obj-especificos p{
     padding-bottom: 10px;
@@ -97,4 +105,38 @@ main{
 .obj-icon{
     width: 20px;
     margin-right: 20px;
+}
+
+@media(max-width:1440px){
+    .contenido{
+        flex-direction: column;
+        width: 95%;
+    }
+    /* IZQUIERDA */
+    .contenido-izquierda{
+        width: 95%;
+        margin: auto;
+        padding-top: 20px;
+    }
+    
+}
+
+@media(max-width:768px){
+    main img{
+        width: 90%;
+    }
+    .texto_izquierda p ,.objetivos p, .objetivo p, .vision p, .mision p{
+        font-size: 1rem;
+    }
+}
+@media(max-width:390px){
+    main img{
+        width: 95%;
+    }
+    .texto_izquierda p ,.objetivos p, .objetivo p, .vision p, .mision p{
+        font-size: 0.9rem;
+    }
+    .obj-icon{
+        width: 15px;
+    }
 }

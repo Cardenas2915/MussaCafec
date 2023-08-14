@@ -11,6 +11,20 @@
         <a href="#Robotica">Torneo de robotica</a>
     </div>
 </main>
+
+<?php if(isset($_SESSION['registrado'] )): ?>
+<div class='message-register'>
+    <?= $_SESSION['registrado'] ; ?>
+</div>
+<?php endif; ?>
+
+<div class="errores-archivos">
+    <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'tamaño'):"" ?>
+    <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'formato-docx'):"" ?>
+    <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'error-archivo'):"" ?>
+    <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'formato-pdf'):"" ?>
+    <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'numerico'):"" ?>
+</div>
 <!-- FORMULARIO PARA LA CATEGORIA PONENTE -->
 <section class="categorias" id="ponente">
     <div class="categorias_div">
@@ -22,14 +36,14 @@
             </div>
         </div>    
         <div class="formulario">
-            <form action="./config/registrarPonentes.php" method="POST" class="form">
+            <form action="./config/registrarPonentes.php" method="POST" class="form" enctype="multipart/form-data">
                     <div class="coolinput">
                         <label for="eje" class="text">Eje tematico:</label>
-                        <input type="text" placeholder="..." name="ejetematico" class="input" id="eje" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}">
+                        <input type="text" placeholder="..." name="ejetematico" class="input" id="eje">
                     </div>
                     <div class="coolinput">
                         <label for="Institucion" class="text">Institución de participación:</label>
-                        <select id="Institucion" class="select" onchange="mostrar()">
+                        <select id="Institucion" class="select" onchange="mostrar()" name="tipoInstitucion">
                             <option value="">Seleccione una opcion</option>
                             <option value="SENA">SENA</option>
                             <option value="Externa">Externa</option>
@@ -38,13 +52,13 @@
                     <div class="mostrar-input-externa">
                         <div class="coolinput">
                             <label for="externa" class="text">Define tu Insitucion:</label>
-                            <input type="text" placeholder="Nombre de la institucion..." name="externa" class="input" id="externa" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}">
+                            <input type="text" placeholder="Nombre de la institucion..." name="externa" class="input" id="externa">
                         </div>
                     </div>
                     <div class="mostrar-input-sena">
                         <div class="coolinput">
                             <label for="titulada" class="text">Titulada:</label>
-                            <input type="text" placeholder="Nombre de la titulada.." name="titulada" class="input" id="titulada" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,40}">
+                            <input type="text" placeholder="Nombre de la titulada.." name="titulada" class="input" id="titulada" >
                         </div>
 
                         <div class="coolinput">
@@ -79,15 +93,18 @@
                     <div class="coolinput">
                         <span class="form-title">Se debe cargar documento en formato Word con la información del proyecto y 
                             documento en power point o pdf con la presentación del proyecto. (Limitar el tamaño
-                            del documento a 20 Mb x documento).</span>
+                            del documento a 20 Mb x documento ).</span>
+                            <br>
+                            <span class="form-title">Los documentos debe ir nombrados por el titulo del proyecto.</span>
                         <label for="file-input" class="drop-container">
-                            <span class="drop-title">Selecciona tus archivos aqui.</span>
+                            <span class="drop-title">Selecciona tus archivos PDF o Power Point aqui.</span>
                             <input type="file" name="archivo_1" accept=".pdf" id="file-input">
+                            <span class="drop-title">Selecciona tus archivos Word aqui.</span>
                             <input type="file" name="archivo_2" accept=".docx" id="file-input">
                         </label>
                     </div>
                     <div class="coolinput">
-                        <input type="submit" value="Registarme" class="button-registro">
+                        <input type="submit" value="Registrarme" class="button-registro">
                     </div>
             </form>
         </div>
@@ -104,14 +121,14 @@
             </div>
         </div>    
         <div class="formulario">
-            <form action="./config/registrarPoster.php" method="POST" class="form">
+            <form action="./config/registrarPoster.php" method="POST" class="form" enctype="multipart/form-data">
                     <div class="coolinput">
                         <label for="nombreInstitucion" class="text">Institucion:</label>
                         <input type="text" placeholder="Nombre de la Institucion" name="nombreInstitucion" class="input" id="nombreInstitucion">
                     </div>
                     <div class="coolinput">
                         <label for="participantes" class="text">Participantes:</label>
-                        <input type="text" name="Nparticipantes" min="1" max="6" placeholder="Ingrese el número de participantes (máximo 6)" class="input" id="participantes">
+                        <input type="text" min="1" max="3" placeholder="Ingrese el número de participantes (máximo 3)" class="input" id="participantes">
                     </div>
                     <div id="contenedorParticipantes"></div>
                     <div class="coolinput">
@@ -144,14 +161,14 @@
             </div>
         </div>    
         <div class="formulario">
-            <form action="./config/registrarFeria.php" method="POST" class="form">
+            <form action="./config/registrarFeria.php" method="POST" class="form" enctype="multipart/form-data">
                     <div class="coolinput">
                         <label for="nombreInstitucionFeria" class="text">Institucion:</label>
                         <input type="text" placeholder="Nombre de la Institucion" name="nombreInstitucion" class="input" id="nombreInstitucionFeria">
                     </div>
                     <div class="coolinput">
                         <label for="N-participantes" class="text">N° de participantes:</label>
-                        <input type="text" placeholder="Ingrese el número de participantes" class="input" id="N-participantes" name="participantes">
+                        <input type="text" placeholder="Ingrese el número de participantes" min="1" max="10" class="input" id="N-participantes" name="participantes">
                     </div>
                     <div class="coolinput">
                         <label for="tituloProyectoFeria" class="text">Titulo del proyecto:</label>
@@ -162,7 +179,7 @@
                                     o emprendimiento)</span>
                     </div>
                     <div class="coolinput">
-                        <input type="submit" value="Registarme" class="button-registro">
+                        <input type="submit" value="Registrarme" class="button-registro">
                     </div>
                     
             </form>
@@ -222,11 +239,12 @@
                         <input type="text" placeholder="Contacto del segundo participante..." name="contacto2" class="input" id="contacto2">
                     </div>
                     <div class="coolinput">
-                        <input type="submit" value="Registarme" class="button-registro">
+                        <input type="submit" value="Registrarme" class="button-registro">
                     </div>
                     
             </form>
         </div>
     </div>
 </section>
+<?php BorrarErrores(); ?>
 <script src="./js/registro.js"></script>

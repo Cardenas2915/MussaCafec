@@ -27,8 +27,7 @@
         <div class="span-registro">
         <h1>Deseas participar?</h1>
             <a class="link_span-registro" href="index.php?vista=registro">
-                <div class="icon_span-registro"><img class="" src="./img/next.png" alt=""></div>
-                <p>Registrate Aqui</p>
+                Registrate Aqui
             </a>
         </div>
     </div>
@@ -221,7 +220,7 @@ desarrollo de software.</pre>
                     posterior a ello iniciaran actividades de forma paralela.</li>
             </ul>
         </div>
-        <div class="img_cronograma1">
+        <div class="img_cronograma">
             <img src="./img/eventoDia1.jpeg" alt="">
         </div>
     </div>
@@ -231,12 +230,12 @@ desarrollo de software.</pre>
         <div class="text_cronograma ">
             <h1>Miercoles 18 de octubre de 2023. Dia(2)</h1>
             <ul>
-                <li><img class="icon_cronograma" src="./img/flecha-correcta.png" alt=""> Presentación de ponencias y poster</li>
-                <li><img class="icon_cronograma" src="./img/flecha-correcta.png" alt=""> Presentación feria empresarial</li>
-                <li><img class="icon_cronograma" src="./img/flecha-correcta.png" alt=""> Torneo de robótica</li>
+                <li><img class="icon_cronograma" src="./img/flecha-correcta.png" alt="">Presentación de ponencias y poster</li>
+                <li><img class="icon_cronograma" src="./img/flecha-correcta.png" alt="">Presentación feria empresarial</li>
+                <li><img class="icon_cronograma" src="./img/flecha-correcta.png" alt="">Torneo de robótica</li>
             </ul>
         </div>
-        <div class="img_cronograma1">
+        <div class="img_cronograma">
             <img src="./img/eventoDia1.jpeg" alt="">
         </div>
     </div>

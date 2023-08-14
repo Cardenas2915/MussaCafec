@@ -18,7 +18,7 @@ if(is_file('./views/contenido/'.$_GET['vista'].'.php') &&  $_GET['vista'] != 'ho
         
         include('views/contenido/home.php');
     }else{
-        include('views/404.php');
+        include('views/contenido/404.php');
     }
 }
 

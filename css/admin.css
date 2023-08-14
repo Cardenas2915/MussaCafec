@@ -1,0 +1,176 @@
+main{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 50px;
+    background: rgb(0,50,77);
+    background: linear-gradient(0deg, rgba(0,50,77,1) 0%, rgba(0,50,77,0.8270716292134832) 100%);
+}
+main a{
+    width:250px ;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 4px;
+    gap: 10px;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+    color: var(--azulSena);
+}
+main a:hover{
+    background: #39A900;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+main a h2{
+    font-family:"WorkSans-Medium";
+}
+main a p{
+    font-family:"WorkSans-Italic";
+}
+/*BUSCADORES*/
+.titulo-cont h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:"WorkSans-Medium";
+    font-size: 1.5rem;
+    margin: 30px;
+}
+.buscadores{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    background: rgb(57,169,0);
+    background: linear-gradient(0deg, rgba(57,169,0,0.7456109550561798) 0%, rgba(57,169,0,0.1978581460674157) 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+.checkbox{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+.checkbox label{
+    font-family:"WorkSans-Italic";
+    font-size: 1.1rem;
+    margin-right: 10px;
+}
+.check{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+.checkbox p{
+    font-family:"WorkSans-Italic";
+    font-size: 1.1rem;
+    margin-right: 10px;
+}
+.coolinput{
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items:center;
+    width: 70%;
+}
+.coolinput input[type=text].input {
+    padding: 11px 10px;
+    font-size: 1rem;
+    border: 2px #39A900 solid;
+    font-family:"WorkSans-Italic";
+    border-radius: 5px;
+    background: #F3F4F4;
+    width: 100%;
+
+}
+.coolinput input[type=text].input:focus{
+    outline: none;
+}
+/*SECCION PONENCIA*/
+#ponencia{
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    margin: auto;
+}
+.resultados, .resultado-de-busqueda, .resultadoFeria, .resultadoRobotica{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 98%;
+    margin: auto;
+}
+.proyectos, .proyectosFeria, .proyectosRobotica{
+    position: relative;
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    border: 1px solid gray;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 15px;
+    background: rgb(57,169,0);
+    background: linear-gradient(0deg, rgba(57,169,0,0.7456109550561798) 0%, rgba(57,169,0,0.1978581460674157) 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.datos{
+    margin-bottom: 10px;
+}
+.datos h3, .sin-registros h3{
+    font-family:"WorkSans-Italic";
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+}
+.datos p, .sin-registros p{
+    font-family:"WorkSans-Italic";
+    font-size: 1rem;
+}
+.datos a{
+    font-family:"WorkSans-Italic";
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.delete{
+    position: absolute;
+    font-family:"WorkSans-Italic";
+    bottom: 20px;
+    right:20px ;
+    padding: 10px 15px;
+    background: rgb(197, 70, 45);
+    border-radius: 5px;
+    color: white;
+}
+/*Sin Registros*/
+.sin-registros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: rgb(57,169,0);
+    background: linear-gradient(0deg, rgba(57,169,0,0.7456109550561798) 0%, rgba(57,169,0,0.1978581460674157) 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+/*mensajes de error o borrado*/
+.message-error{
+    display: flex;
+    padding: 10px;
+    background: rgb(204,119,102);
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.message-error p{
+    font-family:"WorkSans-Italic";
+    font-size: 1.3rem;
+    text-align: center;
+}
+

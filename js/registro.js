@@ -106,7 +106,7 @@ participantesInput.addEventListener('input', () => {
     contenedorInputs.innerHTML = ''; // Limpiamos el contenido previo 
     const numParticipantes = parseInt(participantesInput.value); 
     for (let i = 1; i <= numParticipantes; i++) {
-        if (i > 6) {
+        if (i > 3) {
             break; // Limitamos la creación a 6 divs
         }  
         const divInput = document.createElement('div');
@@ -118,6 +118,7 @@ participantesInput.addEventListener('input', () => {
         
         const inputNombre = document.createElement('input');
         inputNombre.type = 'text';
+        inputNombre.name = 'participante'+i;
         inputNombre.className = "input";
         inputNombre.placeholder = `Participante ${i}`;
         
@@ -127,6 +128,7 @@ participantesInput.addEventListener('input', () => {
         
         const inputCorreo = document.createElement('input');
         inputCorreo.type = 'email';
+        inputCorreo.name = "correo"+i;
         inputCorreo.className = "input";
         inputCorreo.placeholder = `Correo ${i}`;
         
@@ -136,6 +138,7 @@ participantesInput.addEventListener('input', () => {
         
         const inputContacto = document.createElement('input');
         inputContacto.type = 'text';
+        inputContacto.name = "contacto"+i
         inputContacto.className = "input";
         inputContacto.placeholder = `Contacto ${i}`;
         

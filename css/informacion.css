@@ -59,11 +59,11 @@ main h1{
 .link-atajos_rapidos li a{
     font-family:"WorkSans-Italic";
     font-size: 1.2rem;
-    text-decoration: none;
     transition: all .3s;
     display: flex;
     align-content: center;
     cursor: pointer;
+    color: black;
 }
 .link-atajos_rapidos li a:hover{
     color: var(--azulSena);
@@ -87,10 +87,13 @@ main h1{
     margin-top: 10px;
     font-family:"WorkSans-Italic";
     font-size: 1rem;
-}.title-fecha span{
+    text-align: justify;
+}
+.title-fecha span{
     color: rgb(255, 255, 255);
     font-family:"WorkSans-Medium";
     font-size: 1.1rem;
+    text-align: justify;
 }
 /* CONTENIDO DE LA DERECHA */
 .componente{
@@ -134,6 +137,7 @@ main h1{
     font-family:"WorkSans-Italic";
     font-size: 1rem;
     margin: 10px 30px;
+    text-align: justify;
 }
 .comp-titulo{
     display: flex;
@@ -156,6 +160,7 @@ main h1{
 .subcomponentes p{
     font-family:"WorkSans-Italic";
     font-size: 1rem;
+    text-align: justify;
 }
 .icon{
     width: 30px;
@@ -178,6 +183,7 @@ main h1{
     font-family:"WorkSans-Italic";
     font-size: 1rem;
     margin:10px 30px;
+    text-align: justify;
 }
 /* ESTILOS PARA EL APARTADO INFO Y NOTA */
 .info{
@@ -209,6 +215,7 @@ main h1{
     font-family:"WorkSans-Italic";
     font-size: 1rem;
     margin-left: 50px;
+    text-align: justify;
 }
 /* SECCION DE SEMILLEROS */
 .title-semilleros{
@@ -258,6 +265,7 @@ main h1{
 .semillero p, .semillero pre{
     font-family:"WorkSans-Italic";
     font-size: 1.2rem;
+    text-align: justify;
 }
 .semillero pre{
     padding:0 20px;
@@ -295,7 +303,7 @@ main h1{
     margin:60px 30px 60px 30px;
     border-radius:5px ;
 }
-.img_cronograma1 img{   
+.img_cronograma img{   
     height: 300px;
     border-radius: 0 20px 0 20px;
 }
@@ -336,44 +344,224 @@ main h1{
     display: flex;
     justify-content: center; 
     align-items: center;
-    padding: 25px;
+    padding: 20px 50px;
     border-radius: 5px;
-    width: 70%;
     background: var(--azulSena);
     transition: .2s ease-in-out all;
     text-decoration: none;
     position: relative;
-}
-.link_span-registro p{
-    font-family:"WorkSans-Italic";
-    font-size: 1.1rem;
-    color: var(--colorwhite);
-    transition: .5s ease-in-out all;
-    position: absolute;
-    left: 25%;
-}
-/*apartado de animar el bottom*/
-.icon_span-registro{
-    width: 20px;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    z-index: 2;
-    left: -20px;
-    transition: .5s ease-in-out all;
-    opacity: 0;
-}
-.icon_span-registro img{
-    width: 20px;
-    filter: invert(100);
+    font-family:"WorkSans-Medium";
+    color: white;
+    font-size: 1.2rem;
 }
 .link_span-registro:hover{
-    background:var(--verdeSena);
+    background: #39A900;
 }
-.link_span-registro:hover .icon_span-registro{
-    left: 87%;
-    opacity: 1;
+@media(max-width:1440px){
+    .banner-img{
+        width: 90%;
+    }
+    /* Contenido de la izquierda */
+    .contenido{
+        flex-direction: column;
+    }
+    .icon-link{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    .link-atajos_rapidos{
+        display: flex;
+        justify-content: center;
+    }
+    .link-atajos_rapidos li a{
+        padding: 10px 30px;
+    }
+    .atajos-rapidos{
+        margin-bottom: 10px;
+    }
+    .link_span-registro{
+        background: #39A900;
+        padding: 20px 100px;
+    }
+    .contenido-izquierda{
+        height: 100%;
+    }
+    .icon-link{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    .link-atajos_rapidos li a{
+        font-size: 1.1rem;
+
+    }
+    /* ESTILOS PARA EL APARTADO INFO Y NOTA */
+    .info{
+        margin: 50px 80px 50px 0;
+    }
+    /* SECCION DE SEMILLEROS */
+    .title-semilleros{
+        margin-left: 80px;
+    }
+    .title-semilleros h1{
+        margin-right: 70px;
+        font-size: 1.4rem;
+    }
+    .semillero img{
+        width: 300px;
+    }
+    .semillero{
+        margin:20px 5px;
+    }
+    .title_cronograma{
+        margin-right:80px ;
+    }
+
 }
-.link_span-registro:hover p{
-    left: 10px;
+
+@media(max-width:768px){
+    .banner-img{
+        width: 95%;
+    }
+    /* ESTILOS PARA EL APARTADO INFO Y NOTA */
+    .info{
+        margin: 50px 80px 50px 0;
+    }
+    /* SECCION DE SEMILLEROS */
+    .title-semilleros{
+        margin-left: 80px;
+    }
+    .title-semilleros h1{
+        margin-right: 70px;
+        font-size: 1.2rem;
+    }
+    .comp p, .subcomponentes p, .comp2 p, .nota p{
+        font-size: 0.9rem;
+    }
+    .semillero img{
+        width: 300px;
+    }
+    .semillero{
+        margin:20px 5px;
+    }
+    .semillero p, .semillero pre{
+        font-size: 1rem;
+    }
+    .title_cronograma{
+        margin-right:80px ;
+    }
+    .title_cronograma h1{
+        font-size: 1.5rem;
+    }
+    .cont_text{
+        flex-direction: column;
+    }
+    .text_cronograma h1{
+        font-size: 1.4rem;
+    }
+    .text_cronograma ul li{
+        font-size: 1rem;
+    }
+    .icon_cronograma{
+        width: 10px;
+        height: 15px;
+    }
+    .img_cronograma{
+        margin-top: 20px;
+    }
+    .text_cronograma ul li:last-of-type{
+        max-width: 100%;
+    }
+}
+@media(max-width:390px){
+    /* Contenido de la izquierda */
+    .icon-link{
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+    }
+    .link-atajos_rapidos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .link-atajos_rapidos li a{
+        padding: 10px 30px;
+    }
+    .atajos-rapidos{
+        margin-bottom: 10px;
+    }
+    .link_span-registro{
+        background: #39A900;
+        padding: 20px 80px;
+    }
+    .contenido-izquierda{
+        height: 100%;
+    }
+    .icon-link{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    .link-atajos_rapidos li a{
+        font-size: 1.1rem;
+
+    }
+    /* ESTILOS PARA EL APARTADO INFO Y NOTA */
+    .info{
+        clip-path:none;
+        margin-top:20px;
+        width: 100%;
+    }
+    .nota p{
+        margin: 0;
+    }
+    .comp-titulo h1{
+        font-size: 1.4rem;
+    }
+    /* SECCION DE SEMILLEROS */
+    .cont_semilleros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title-semilleros{
+        clip-path:none;
+        margin: 0 auto;
+    }
+    .title-semilleros h1{
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 0;
+    }
+    .semillero img{
+        width: 300px;
+    }
+    .semillero{
+        width: 350px;
+    }
+    .semillero p , .semillero pre{
+        font-size: 1rem;
+    }
+    .title_cronograma{
+        clip-path:none;
+        margin: 0;
+        text-align: center;
+    }
+    .title_cronograma h1{
+        margin: 0;
+    }
+    .cont_text{
+        background: var(--verdeSena);
+    }
+    .text_cronograma h1{
+        margin: 0;
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+    .img_cronograma{
+        display:none ;
+    }
 }

@@ -1,0 +1,35 @@
+@import 'config.css';
+main{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(57,169,0);
+    background: linear-gradient(0deg, rgba(57,169,0,1) 0%, rgba(57,169,0,0.5517907303370786) 100%);
+}
+.error-title{
+    margin-bottom: 20px;
+}
+.error-title h1{
+    font-family:"WorkSans-ExtraBold";
+    color: var(--colorwhite);
+    font-size: 3rem
+}
+.error-message p{
+    font-family:"WorkSans-Italic";
+    color: var(--colorwhite);
+    font-size: 1.2rem;
+}
+.back-button a{
+    margin-top: 20px;
+    font-family:"WorkSans-Italic";
+    background: var(--azulSena);
+    font-size: 1.2rem;
+    color: var(--colorwhite);
+    text-decoration: none;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 5px;
+}

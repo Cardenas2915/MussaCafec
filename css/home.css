@@ -13,8 +13,7 @@ main{
 }
 .cont-izquierda h1{
     font-family:"WorkSans-ExtraBold";
-    font-size: 3.5rem;
-    font-size: 72px;
+    font-size: 5rem;
     background: #39A900;
     background: repeating-linear-gradient(to right, #369e01 0%, #38a900a6 100%);
     -webkit-background-clip: text;
@@ -38,12 +37,9 @@ main{
 .atajos-rapidos{
     display: flex;
     justify-content: space-evenly;
-    margin: 0 auto;
+    width: 90%;
+    margin: auto;
     margin-top: 40px;
-}
-.icon{
-    width: 20px;
-    filter: invert(100%);
 }
 .icon_atajos{
     width: 100px;
@@ -51,6 +47,7 @@ main{
 .cards{
     background: #c5e5f465;
     display: inline-flex;
+    margin-right: 20px;
     border-radius: 15px;
     -webkit-box-shadow: 10px 10px 9px -7px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 9px -7px rgba(0,0,0,0.75);
@@ -132,4 +129,95 @@ main{
 .link-card:hover span:after {
     opacity: 1;
     right: 0;
+}
+@media (max-width:1024px) {
+    /* CARDS DE ATAJOS RAPIDOS */
+    .img-home{
+        width: 400px;
+    }
+    .cont-izquierda h1{
+        font-size: 3.3rem;
+    }
+    .cont-izquierda p{
+        font-size: 1.1rem;
+    }
+    .cards{
+        margin: auto 10px;
+    }
+    .card_title{
+        padding:0;
+    }
+    .card_title h1{
+        margin: 10px;
+    }
+    .card_title img{
+        margin:5px 0;
+        width: 70px;
+    }
+    .card_text h1{
+        font-size: 1.3rem;
+    }
+    .card_text p{
+        font-size: 1rem;
+        margin:10px  ;
+    }
+    .link-card{
+        margin-left:auto;
+        margin-right: 20px;
+    }
+
+}
+@media (max-width:768px) {
+
+    main{
+        flex-direction: column-reverse;
+    }
+    .img-home{
+        width: 400px;
+    }
+    .cont-izquierda h1{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .cont-izquierda p{
+        font-size: 1.1rem;
+    }
+    .titulo-interes{
+        margin-top: 30px;
+        font-size:2rem;
+    }
+    /* CARDS DE ATAJOS RAPIDOS */
+    .atajos-rapidos{
+        flex-direction: column;
+    }
+    .cards{
+        flex-direction: column;
+        width: 60%;
+        margin:20px auto;
+    }
+    .card_title{
+        padding:0;
+        border-radius: 10px;
+    }
+    .card_title h1{
+        font-size: 2rem;
+        color:var(--colorwhite);
+        margin:20px;
+    } 
+    .card_title img{
+        margin:5px 0;
+    }
+    .card_text h1{
+        font-size: 1.3rem;
+        margin:20px 10px;
+    }
+    .card_text p{
+        font-size: 1rem;
+        margin:20px 20px ;
+    }
+    .link-card{
+        margin-left:auto;
+        margin-right: 20px;
+    }
+
 }

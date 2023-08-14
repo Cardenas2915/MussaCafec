@@ -214,3 +214,126 @@ background: linear-gradient(0deg, rgba(0,50,77,1) 0%, rgba(0,50,77,0.82707162921
     width:90%;
     margin: 7px;
 }
+/*mensajes de Error*/
+.errores-archivos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.error-archivo{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: rgb(204,119,102);
+    border-radius: 5px;
+}
+.error-archivo h1{
+    font-family:"WorkSans-Medium";
+    margin-right: 20px;
+    font-size: 1.1rem;
+    color: var(--colorwhite);
+}
+.error-archivo p{
+    font-family:"WorkSans-Italic";
+    font-size: 1rem;
+}
+.message-register, .message-register-error{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.message-register{
+    padding: 15px;
+    border-radius: 5px;
+    background: var(--verdeSena);
+}
+.message-register p{
+    font-family:"WorkSans-Italic";
+    font-size: 1.3rem;
+    color: white;
+}
+.message-register span{
+    font-family:"WorkSans-Medium";
+    font-size: 1.5rem;
+}
+@media(max-width:1024px){
+    .categorias_div{
+        width: 90%;
+    }
+    .title-categorias{
+        flex-direction: column;
+    }
+}
+@media(max-width:768px){
+    .main h1{
+        font-size: 2rem;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+    .main p{
+        font-size: 1.2rem;
+    }
+    .submenu-nav{
+        padding: 10px 0;
+    }
+    .submenu-nav a{
+        font-size: 1.2rem;
+        text-decoration: underline;
+        
+    }
+    .descargar-formato button{
+        padding: 10px 20px;
+        font-size: 1.1rem;
+    }
+    .icon-descarga{
+        width: 18px;
+    }
+    .form-title{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:390px){
+    .main h1{
+        font-size: 1.5rem;
+    }
+    .main p{
+        font-size: 1rem;
+    }
+    .submenu-nav{
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .submenu-nav a{
+        padding: 10px 0;
+        
+    }
+    .title-categorias h1{
+        margin-bottom: 15px;
+    }
+    .descargar-formato{
+        flex-direction: column;
+    }
+    .descargar-formato p{
+        margin: 0;
+    }
+    .descargar-formato button{
+        margin-top: 15px;
+        width: 100%;
+        padding: 12px;
+        font-size: 1.1rem;
+    }
+    .coolinput label.text {
+        font-size: 1rem;
+    }
+    
+    .coolinput input[type=text].input ,.coolinput input[type=email].input, .select {
+        padding: 10px 10px;
+        font-size: 0.9rem;
+
+    }
+    
+}

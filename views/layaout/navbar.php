@@ -1,31 +1,32 @@
 <link rel="stylesheet" href="./css/header.css">
+
 <!-- CABEZERA -->
-<header class="header">
-    <div class="logos">
-        <img src="img/logoSena.svg" alt="">
-        <span class="separa-logos"></span>
-        <a href="index.php">MUSSA CAFEC</a>
-    </div>
-    <nav>
-        <ul>
-        <li><a href="index.php">Inicio</a></li>
-        <li id="dropdown">
-            <div class="title-dropdown">
-                <a id="dropdown-trigger">Participa
-                <img id="icon-dropdown" src="./img/row-bottom.png" alt="">
-                </a>
-            </div>
-            <ul id="dropdown-content">
-                <li><a href="index.php?vista=informacion">Informacion</a></li>
-                <li><a href="index.php?vista=registro">Registrarme</a></li>
-            </ul>
-        </li>
-        <li class=""><a href="index.php?vista=galeria">Galeria</a></li>
-        <li><a href="index.php?vista=nosotros">Nosotros</a></li>
+<nav class="navbar">
+        <div class="logos">
+            <img src="img/logoSena.svg" alt="">
+            <span class="separa-logos"></span>
+            <a href="index.php">MUSSA CAFEC</a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-list" id="nav-list">
+            <li><a href="index.php?vista=informacion">Información</a></li>
+            <li><a href="index.php?vista=registro">Participar</a></li>
+            <li><a href="index.php?vista=galeria">Galería</a></li>
+            <li><a href="index.php?vista=nosotros">Nosotros</a></li>
+            <?php if(isset($_SESSION['usuario'])): ?>
+                <li><a href="index.php?vista=administrador">Reportes</a></li>
+                <li><a href="./config/logout.php">Cerrar sesion</a></li>
+            <?php else : ?>
+                <li><a href="index.php?vista=login">Login</a></li>
+            <?php endif; ?>
         </ul>
     </nav>
-    <div class="box-perfil">
-        <a href="index.php?vista="><img class="user-icon" src="img/usuario.svg" alt=""></a>
-    </div>
-</header>
+    <?php if(isset($_SESSION['usuario'])): ?>
+        <p class="admin-text">Estas como administrador</p>
+    <?php endif; ?>
+
 <script src="./js/navbar.js"></script>
