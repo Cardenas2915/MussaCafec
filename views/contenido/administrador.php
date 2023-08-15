@@ -350,7 +350,7 @@ require_once('./config/db.php');
     </div>
 <?php endif; ?>
 </section>
-<?php BorrarErrores(); ?>
+<?php //BorrarErrores(); ?>
 <script src="./js/reportes.js"></script>
 <script src="./js/buscadorPonente.js"></script>
 <script src="./js/buscadorPoster.js"></script>

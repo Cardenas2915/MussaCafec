@@ -18,8 +18,8 @@ if (isset($_GET['id'])) {
             unlink("../resources/ponentes/$archivo1");
         }
         
-        if (file_exists("./resources/ponentes/$archivo2")) {
-            unlink("./resources/ponentes/$archivo2");
+        if (file_exists("../resources/ponentes/$archivo2")) {
+            unlink("../resources/ponentes/$archivo2");
         }
 
         // Eliminar el registro de la base de datos

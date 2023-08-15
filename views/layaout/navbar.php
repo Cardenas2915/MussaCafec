@@ -13,7 +13,7 @@
             <span></span>
         </div>
         <ul class="nav-list" id="nav-list">
-            <li><a href="index.php?vista=informacion">Información</a></li>
+            <li><a href="index.php?vista=infoEncuentro">Información</a></li>
             <li><a href="index.php?vista=registro">Participar</a></li>
             <li><a href="index.php?vista=galeria">Galería</a></li>
             <li><a href="index.php?vista=nosotros">Nosotros</a></li>

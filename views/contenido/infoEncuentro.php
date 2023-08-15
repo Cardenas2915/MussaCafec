@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="./css/informacion.css">
 <main>
-        <img class="banner-img" src="./img/banner.png" alt="">
+    <h1>Informacion del VI Encuentro de Semilleros de Investigación SENA</h1>
+    <p>"Descubre las Ideas Emergentes: Explorando el VI Encuentro de Semilleros de Investigación SENA"</p>
 </main>
 
 <section class="contenido">
@@ -183,20 +184,20 @@
         </div>
 
         <div class="semillero">
-            <img src="./img/construccion.jpg" alt="">
+            <img src="./img/construccion.png" alt="">
             <h1>INDESCO</h1>
             <p>Semillero red de construcción</p>
         </div>
 
         <div class="semillero">
-            <img src="./img/construccion.jpg" alt="">
+            <img src="./img/aurora.png" alt="">
             <h1>LA AURORA</h1>
             <pre>Semillero red de cultura, artes escénicas, 
 gastronomía, agroindustria</pre>
         </div>
 
         <div class="semillero">
-            <img src="./img/construccion.jpg" alt="">
+            <img src="./img/shikta.png" alt="">
             <h1>SHIKTA SHAWA</h1>
             <pre>Semillero red gestión administrativa
 y financiera, informática, diseño y 
@@ -221,7 +222,7 @@ desarrollo de software.</pre>
             </ul>
         </div>
         <div class="img_cronograma">
-            <img src="./img/eventoDia1.jpeg" alt="">
+            <img src="./img/3.png" alt="">
         </div>
     </div>
 </section>
@@ -236,7 +237,7 @@ desarrollo de software.</pre>
             </ul>
         </div>
         <div class="img_cronograma">
-            <img src="./img/eventoDia1.jpeg" alt="">
+            <img src="./img/54.png" alt="">
         </div>
     </div>
 </section>

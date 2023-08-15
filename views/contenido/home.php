@@ -53,7 +53,7 @@
                 <p>Ingresa, busca tu categoria, <br> registrate y participa de esta gran <br> oportunidad.</p>
             </div>
             <div class="link-card">
-            <a href="index.php?vista=informacion"><span>Ver mas</span></a>
+            <a href="index.php?vista=registro"><span>Participar</span></a>
             </div>
         </div>
     </div>

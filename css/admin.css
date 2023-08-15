@@ -146,6 +146,9 @@ main a p{
     background: rgb(197, 70, 45);
     border-radius: 5px;
     color: white;
+    text-decoration: none !important;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 /*Sin Registros*/
 .sin-registros{
@@ -174,3 +177,65 @@ main a p{
     text-align: center;
 }
 
+@media(max-width:1024px){
+    main a{
+        width:200px ;
+        height: 150px;
+        text-align: center;
+    }
+}
+@media(max-width:768px){
+    main a{
+        width:150px ;
+        height: 140px;
+        text-align: center;
+    }
+}
+@media(max-width:390px){
+    main{
+        flex-direction: column;
+    }
+    main a{
+        width:150px ;
+        height: 140px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 0.8rem;
+    }
+    .buscadores{
+        flex-direction: column;
+        width: 100%;
+        padding: 5px;
+        border-radius: 4px;
+    }
+    .checkbox p{
+        margin: 0;
+        font-size: 1rem;
+    }
+    .checkbox{
+        margin-bottom: 10px;
+    }
+    .checkbox label{
+        font-size: 1rem;
+    }
+    .coolinput{
+        width: 100%;
+    }
+    .resultados, .resultado-de-busqueda, .resultadoFeria, .resultadoRobotica{
+        width: 100%;
+        margin: 0;
+    }
+    .proyectos, .proyectosFeria, .proyectosRobotica{
+        width: 100%;
+        margin: 0px;
+        margin-top: 20px;
+        padding-bottom: 0px;
+    }
+    .delete{
+        position:static ;
+        padding: 10px 15px;
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+    }
+}

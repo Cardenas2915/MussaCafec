@@ -9,7 +9,7 @@ password        varchar(20) not null,
 CONSTRAINT pk_usuarios PRIMARY KEY(id) 
 )ENGINE=InnoDb;
 
-INSERT INTO usuarios VALUES(NULL, 'Administrador', 'Admin', 'password');
+INSERT INTO usuarios VALUES(NULL, 'Administrador', 'Admin', 'Password*');
 
 CREATE TABLE ponentes (
     id INT(6) auto_increment not null,

@@ -30,17 +30,3 @@ function limpiar_cadena($cadena){
 		$cadena=stripslashes($cadena);
 		return $cadena;
 }
-
-function renombrar_fotos($nombre){
-	
-	$nombre = str_ireplace(" ","_",$nombre);
-	$nombre = str_ireplace("/","_",$nombre);
-	$nombre = str_ireplace("#","_",$nombre);
-	$nombre = str_ireplace("-","_",$nombre);
-	$nombre = str_ireplace("$","_",$nombre);
-	$nombre = str_ireplace(".","_",$nombre);
-	$nombre = str_ireplace(",","_",$nombre);
-
-	$nombre = $nombre."_".rand(0,100); //la funcion rand seleccion un numero aleatorio entre los parametros dados en este caso es de 0 a 100
-	return $nombre;
-}
